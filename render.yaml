@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: proxygo
+    runtime: python3
+    repo: https://github.com/CurrentlySkidding/ProxyGO
+    plan: free
+    buildCommand: ""
+    startCommand: python proxy.py
+    envVars:
+      - key: PORT
+        value: 8080
